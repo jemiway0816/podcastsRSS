@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82B2A90128FBCA5800D9F553 /* mainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B2A90028FBCA5800D9F553 /* mainTableViewCell.swift */; };
+		82B2A90328FBCB5800D9F553 /* myTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B2A90228FBCB5800D9F553 /* myTableView.swift */; };
 		DA232BDB28E27BF300039D74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA232BDA28E27BF300039D74 /* AppDelegate.swift */; };
 		DA232BDD28E27BF300039D74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA232BDC28E27BF300039D74 /* SceneDelegate.swift */; };
 		DA232BDF28E27BF300039D74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA232BDE28E27BF300039D74 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82B2A90028FBCA5800D9F553 /* mainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTableViewCell.swift; sourceTree = "<group>"; };
+		82B2A90228FBCB5800D9F553 /* myTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTableView.swift; sourceTree = "<group>"; };
 		DA232BD728E27BF300039D74 /* podcastsRSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = podcastsRSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA232BDA28E27BF300039D74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA232BDC28E27BF300039D74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				DA232BE328E27BF400039D74 /* Assets.xcassets */,
 				DA232BE528E27BF400039D74 /* LaunchScreen.storyboard */,
 				DA232BE828E27BF400039D74 /* Info.plist */,
+				82B2A90028FBCA5800D9F553 /* mainTableViewCell.swift */,
+				82B2A90228FBCB5800D9F553 /* myTableView.swift */,
 			);
 			path = podcastsRSS;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82B2A90328FBCB5800D9F553 /* myTableView.swift in Sources */,
+				82B2A90128FBCA5800D9F553 /* mainTableViewCell.swift in Sources */,
 				DA232BDF28E27BF300039D74 /* ViewController.swift in Sources */,
 				DA232BDB28E27BF300039D74 /* AppDelegate.swift in Sources */,
 				DA232BEF28E27C1F00039D74 /* PodCasts.swift in Sources */,
