@@ -16,16 +16,10 @@ class MainViewController: UIViewController, UITableViewDataSource {
     var colorValue = 0.0
     var colorDirect = true
     
-    @IBOutlet var rssName: UILabel!
-    @IBOutlet var rssPicture: UIImageView!
-    
-    @IBOutlet weak var rssIconImageView: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         myTableView.dataSource = self
-        rssIconImageView.layer.cornerRadius = 10
         fatch()
     }
     
@@ -44,10 +38,10 @@ class MainViewController: UIViewController, UITableViewDataSource {
         cell.cellLabel.text = item.name
         cell.cellNameLabel.text = item.artistName
         
-        if colorValue > 0.9 {
+        if colorValue > 0.8 {
             colorDirect = false
         }
-        if colorValue < 0.1 {
+        if colorValue < 0.2 {
             colorDirect = true
         }
 

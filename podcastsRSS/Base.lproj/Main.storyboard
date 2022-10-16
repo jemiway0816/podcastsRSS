@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--RSS Reader-->
         <scene sceneID="ek5-m7-O28">
             <objects>
                 <viewController id="jmv-ZF-lKf" customClass="MainViewController" customModule="podcastsRSS" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,12 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="heb-nE-e9F" customClass="myTableView" customModule="podcastsRSS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="152" width="390" height="692"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="753"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlogPosts" id="7T4-RR-An0">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="130"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainTableViewCell" rowHeight="150" id="5ij-R5-GM5" customClass="mainTableViewCell" customModule="podcastsRSS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.333332061767578" width="390" height="150"/>
+                                        <rect key="frame" x="0.0" y="185.33333206176758" width="390" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5ij-R5-GM5" id="6Go-fJ-oxV">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
@@ -57,22 +61,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlogPosts" translatesAutoresizingMaskIntoConstraints="NO" id="7T4-RR-An0">
-                                <rect key="frame" x="0.0" y="71" width="390" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rssIcon" translatesAutoresizingMaskIntoConstraints="NO" id="O9K-kG-I0O">
-                                <rect key="frame" x="314" y="135" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dk9-BV-jlP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cIl-Py-INJ"/>
+                    <navigationItem key="navigationItem" title="RSS Reader" id="cIl-Py-INJ"/>
                     <connections>
                         <outlet property="myTableView" destination="heb-nE-e9F" id="piw-lr-ZgG"/>
-                        <outlet property="rssIconImageView" destination="O9K-kG-I0O" id="fck-KC-6XA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YLA-68-sR8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -130,7 +125,6 @@
     </scenes>
     <resources>
         <image name="BlogPosts" width="935" height="308"/>
-        <image name="rssIcon" width="250" height="251"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
